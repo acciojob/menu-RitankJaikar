@@ -106,7 +106,7 @@ const App = () => {
                     }
                     else if(category === item.category) {
                         return (
-                            <div key={item.id}>
+                            <div key={item.id} data-test-id={`menu-item-${item.category}`}>
                                 <div>{item.id}</div>
                                 <div>{item.title}</div>
                                 <div>{item.category}</div>
