@@ -81,13 +81,13 @@ const App = () => {
   const [category, setCategory] = useState("all");
 
   return (
-    <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
+    <div id='main' style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
         <h1>Our Menu</h1>
         <div>
-            <button onClick={() => setCategory("all")}>All</button> &nbsp;&nbsp;
-            <button onClick={() => setCategory("breakfast")}>Breakfast</button> &nbsp;&nbsp;
-            <button onClick={() => setCategory("lunch")}>Lunch</button> &nbsp;&nbsp;
-            <button onClick={() => setCategory("shakes")}>Shakes</button>
+            <button onClick={() => setCategory("all")} id='filter-btn-1'>All</button> &nbsp;&nbsp;
+            <button onClick={() => setCategory("breakfast")} id='filter-btn-2'>Breakfast</button> &nbsp;&nbsp;
+            <button onClick={() => setCategory("lunch")} id='filter-btn-3'>Lunch</button> &nbsp;&nbsp;
+            <button onClick={() => setCategory("shakes")} id='filter-btn-4'>Shakes</button>
         </div>
         <div>
             {
